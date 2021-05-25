@@ -1,0 +1,11 @@
+Student:
+  - id: -1
+    sku: SKU001
+    room: 1
+  - id: -2
+    sku: SKU002
+    room: 2
+  - id: -3
+    sku: SKU003
+    room: 3
+    
