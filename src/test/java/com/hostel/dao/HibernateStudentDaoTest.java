@@ -37,11 +37,11 @@ public class HibernateStudentDaoTest {
     private StudentDao dao = new HibernateStudentDao(sessionProvider.getSessionFactory());
 
     @Test
-    @DataSet(value = "dataset/yml/students.yml", cleanAfter = true)
+    @DataSet({"dataset/yml/student.yml"})
     public void testFindById() {
-        Student student = dao.findById(Long.valueOf(-1L));
+        Student student = dao.findById(Long.valueOf(1L));
         assertThat(student).isNotNull();
-        assertThat(student.getId()).isEqualTo(-1L);
+        assertThat(student.getId()).isEqualTo(1L);
         assertThat(student.getSku()).isEqualTo("SKU001");
     }
 

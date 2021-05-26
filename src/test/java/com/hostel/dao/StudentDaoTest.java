@@ -64,7 +64,7 @@ public class StudentDaoTest extends DataSourceBasedDBTestCase {
     @Override
     protected IDataSet getDataSet() throws Exception {
         return new FlatXmlDataSetBuilder().build(getClass()
-                .getClassLoader().getResourceAsStream("dataset/students.xml"));
+                .getClassLoader().getResourceAsStream("dataset/student.xml"));
     }
 
 }

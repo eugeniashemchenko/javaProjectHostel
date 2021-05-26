@@ -23,5 +23,5 @@ public class Student implements Entity {
 
     private String sku;
 
-    private Integer price;
+    private Integer room;
 }
